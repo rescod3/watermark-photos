@@ -1,0 +1,18 @@
+{
+  "menu": {
+    "upload_pictures": "Dodaj zdjęcia",
+    "upload_watermark": "Dodaj znak wodny",
+    "choose_position": "Wybierz miejsce znaku",
+    "download": "Pobierz gotowe zdjęcia"
+  },
+  "home": {
+    "page_title": "Strona główna",
+    "page_description": "Lorem",
+    "title": "RES-WATERMARK",
+    "sub_title": "by <a href=\"https://github.com/rescod3\" target=\"_blank\">@rescod3</a>",
+    "description": "Dodawaj znak wodny do swoich zdjęć bezpośrednio z poziomu przeglądarki. To proste! Wystarczy kilka kliknięć i twoje autorskie zdjęcia w internecie będą bezpieczne!",
+    "work": {
+      "title": "Jak to działa?"
+    }
+  }
+}
