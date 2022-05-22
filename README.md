@@ -1,2 +1,2 @@
 # watermark-photos
-Application for adding watermark to photos.
+Application for adding watermark to photo.
