@@ -1,21 +1,33 @@
 import {BaseLayout} from "../misc";
-import {useEffect} from "react";
 import useTranslations from "../hooks/useTranslations";
-import {useDispatch, useSelector} from "react-redux";
-import {mainReducer} from "../store";
+import {useSelector} from "react-redux";
+import Image from "next/image";
+import {PrimaryButton} from "../components/buttons";
 
 export default function HomeScreen(){
     const t = useTranslations();
     const store = useSelector((main) => ({
         lang: main.lang
     }))
-    // const dispatch = useDispatch();
-    //
-    // useEffect(() => {
-    //     dispatch(mainReducer.setLang('pl'))
-    // }, [])
 
-
+    /**
+     * Returns the step as a list item ( li ) with its title and description.
+     * @param {string[]} keys - translations keys names
+     * @returns {JSX.Element}
+     */
+    const stepDescription = (keys) => {
+        return (
+            keys.map((key, idx) => (
+                <li key={idx} className="home__step">
+                    <span className="home__stepNumber">{idx+1}</span>
+                    <div className="home__stepText">
+                        <h4 className="home__stepTitle">{t(`home.work.steps.${key}.title`)}</h4>
+                        <p className="home__stepDesc">{t(`home.work.steps.${key}.description`)}</p>
+                    </div>
+                </li>
+            ))
+        )
+    }
 
     return (
         <BaseLayout title={t('home.page_title')} description={t('home.page_description')}>
@@ -28,10 +40,21 @@ export default function HomeScreen(){
                           <p className="home__description" dangerouslySetInnerHTML={{__html: t('home.description')}}/>
                           <div className="home__work">
                               <h2 className="home__workTitle" dangerouslySetInnerHTML={{__html: t('home.work.title')}}/>
+                              <ul className="home__steps">
+                                  {stepDescription(['one', 'two', 'three', 'four'])}
+                              </ul>
                           </div>
+                        <PrimaryButton
+                            label={t('home.work.start')}
+                            className="-center"
+                        />
                       </div>
-                      <div className="home__image">
-
+                      <div className="home__preview">
+                          <div className="home__imageWrapper">
+                              <div className="home__image">
+                                  <span className="home__watermark" dangerouslySetInnerHTML={{__html: t('home.watermark')}}/>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>

@@ -14,6 +14,11 @@ const reducer = (state = initialState, action) => {
     }
 }
 
+/**
+ * Store: set current lang
+ * @param lang
+ * @returns {{type: string, lang}}
+ */
 const setLang = lang => ({type: SET_LANG, lang})
 
 const mainReducer = {

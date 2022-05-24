@@ -5,7 +5,7 @@ import useTranslations from "../hooks/useTranslations";
 import Link from "next/link";
 import {AiFillHome} from "react-icons/ai";
 
-export default function Header() {
+export default function Header(props) {
 
     const languages = useLanguages()
     const t = useTranslations();
@@ -19,7 +19,7 @@ export default function Header() {
                             <a><AiFillHome/></a>
                         </Link>
                     </div>
-                    <div className="header__navWrapper">
+                    <div className="header__navWrapper --gradientLabel">
                         <nav className="nav">
                             <ul>
                                 {menu.map((item, idx) => (

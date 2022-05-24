@@ -2,17 +2,38 @@
   "menu": {
     "upload_pictures": "Dodaj zdjęcia",
     "upload_watermark": "Dodaj znak wodny",
-    "choose_position": "Wybierz miejsce znaku",
+    "config": "Konfiguracja",
     "download": "Pobierz gotowe zdjęcia"
   },
+  "footer": "RES-WATERMARK <br/> Strona stworzona przez: <a href=\"https://github.com/rescod3\" target=\"_blank\" title=\"GitHub: rescode3\">@rescod3</a>",
   "home": {
     "page_title": "Strona główna",
     "page_description": "Lorem",
     "title": "RES-WATERMARK",
-    "sub_title": "by <a href=\"https://github.com/rescod3\" target=\"_blank\">@rescod3</a>",
+    "sub_title": "by <a href=\"https://github.com/rescod3\" target=\"_blank\" title=\"GitHub: rescode3\">@rescod3</a>",
     "description": "Dodawaj znak wodny do swoich zdjęć bezpośrednio z poziomu przeglądarki. To proste! Wystarczy kilka kliknięć i twoje autorskie zdjęcia w internecie będą bezpieczne!",
     "work": {
-      "title": "Jak to działa?"
-    }
+      "title": "Jak to działa?",
+      "steps": {
+        "one": {
+          "title": "Dodaj zdjęcia",
+          "description": "Prześlij zdjęcia do których chcesz dodać znak wodny."
+        },
+        "two": {
+          "title": "Dodaj znak wodny",
+          "description": "Prześlij znak wodny np. logo twojej firmy."
+        },
+        "three": {
+          "title": "Konfiguracja znaku wodnego",
+          "description": "Zdefiniuj w którym miejscu twoich zdjęć ma się wyświetlać znak wodny oraz jego intensywność."
+        },
+        "four": {
+          "title": "Pobierz gotowe zdjęcia",
+          "description": "Poczekaj chwilę i pobierz swoje zdjęcia z dodanym znakiem wodnym!"
+        }
+      },
+      "start": "Dodaj znak wodny do zdjęć"
+    },
+    "watermark": "TWÓJ <br/> ZNAK WODNY"
   }
 }

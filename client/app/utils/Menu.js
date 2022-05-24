@@ -9,7 +9,7 @@ const menu = [
     },
     {
         route: null,
-        name: 'menu.choose_position'
+        name: 'menu.config'
     },
     {
         route: null,

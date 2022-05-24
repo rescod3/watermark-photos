@@ -1,5 +1,9 @@
 import {useSelector} from "react-redux";
 
+/**
+ * Hook to download translations for the current language.
+ * @returns {function(*, ...[*]): {home: {page_title: string, description: string}}}
+ */
 const useTranslations = () => {
     const store = useSelector((main) => ({
         lang: main.lang

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {Header} from "../components";
+import {Footer, Header} from "../components";
 
 const BaseLayout = (props) => {
 
@@ -18,6 +18,8 @@ const BaseLayout = (props) => {
                <main className="main">
                    {props.children}
                </main>
+
+            <Footer/>
            </div>
         </>
     )
